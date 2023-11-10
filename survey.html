@@ -1,0 +1,56 @@
+<!--For "Survey", have a form asking for "Your background"
+with radio options, "How do you feel about my blog with selection, "The topics that you want me to share" with checkbox, "Your feedback" with textarea, and "Your blog id" with input text, and finally a submit button-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey</title>
+    </head>
+    <header>
+        <h1>Welcome to my blog!</h1>
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">My Blog</a></li>
+                <li><a href="survey.html">Survey</a></li>
+            </ul>
+        </div>
+    </header>
+    <body>
+        
+        <div class="content">
+            <h1>Survey form</h1>
+            <form>
+                Your background:
+                <input type="radio" name="background" value="Student">
+                <label for="student">Student</label>
+                <input type="radio" name="background" value="Software Developer">
+                <label for="software developer">Software Developer</label>
+                <input type="radio" name="background" value="Other">
+                <label for="other">Other</label><br>
+                How do you feel about my blog?
+                <select name="feeling">
+                    <option value="">--Please choose your answer--</option>
+                    <option value="good">Good</option>
+                    <option value="bad">Bad</option>
+                    <option value="so-so">So-so</option>
+                </select><br>
+                The topics that you want me to share:
+                <input type="checkbox" id="git" name="topics" value="Git">
+                <label for="git">Git</label>
+                <input type="checkbox" id="css" name="topics" value="CSS">
+                <label for="css">CSS</label>
+                <input type="checkbox" id="html" name="topics" value="HTML">
+                <label for="html">HTML</label>
+                <input type="checkbox" id="javascript" name="topics" value="JavaScript">
+                <label for="javascript">JavaScript</label><br>
+                Your feedback: <br>
+                <textarea name="feedback" rows="8" cols="35"></textarea><br>
+                Your blog id:
+                <input type="text" id="blog_id" name="blog_id"><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </body>
+    <footer>
+        @ 2022 Thoughtworks
+    </footer>
+</html>
